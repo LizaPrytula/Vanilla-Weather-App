@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>She Codes Plus</title>
+    <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/613bfafb2a.js" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"/>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="weather-app-wrapper">
+      <div class="container">
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand">Weather</a>
+            <form id="search-form" class="d-flex">
+              <input id="search-input" class="form-control me-2" type="search" placeholder="Enter the city ..." aria-label="Search">
+              <button class="btn" id="search-button" type="submit">Search</button>
+              <button class="btn" id="current-button">Current Location</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+
+
+      <div class="container">
+          <div class="row city">
+            <div class="col-12"><h1 class = "town">Lviv</h1></div>
+            <div class="col-12"><h2 class = "date">Today is Tuesday, 16th</h2></div>
+          </div>
+          <div class="row">
+              <div class="col-4">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="icon"/>
+              </div>  
+              <div class="col-4">
+                  <p class = "todaysTemp"><strong id="temperature">+ 13</strong>
+                    <span class="units"><a href="#" id="celsius-link" class="active"> °C </a>| <a href="#" id="fahrenheit-link" >°F</a></span> </p>
+    
+                </div>
+              
+              <div class="col-4">
+                  <ul>
+                      <li id="description"></li>
+                      <li>Humidity: <span id="humidity"></span>%</li>
+                      <li>Wind: <span id="wind"></span> m/h</li>
+                    </ul>
+              </div>
+          </div>
+      </div>
+      
+    <small>
+        <a
+          href="https://github.com/LizaPrytula/Homeworks"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Liza
+      </small>
+    <script src="index.js"></script>
+  </body>
+</html>
+
