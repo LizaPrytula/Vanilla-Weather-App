@@ -17,12 +17,17 @@ function getTime() {
   ];
   let day = days[now.getDay()];
 
-  let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"];
+  let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"];
+  
   let month = months[now.getMonth()];
 
   let time = document.querySelector(".date");
   time.innerHTML =
-    "Today is " + day + ", " + month + " " + date + ", " + hour + ":" + min;
+    "Today is " + day + ", " + month + " " + date + "th, " + hour + ":" + min;
 }
 
 getTime();
